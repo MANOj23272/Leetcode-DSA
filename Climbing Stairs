@@ -1,0 +1,14 @@
+class Solution {
+    public int climbStairs(int n) {
+        // if(n<=2){
+        //     return n;
+        // }
+        // int a= climbStairs(n-1);
+        // int b= climbStairs(n-2);
+        // return a+b;
+        int a = 1, b = 1;
+    while (n-- > 0)
+        a = (b += a) - a;
+    return a;
+    }
+}
