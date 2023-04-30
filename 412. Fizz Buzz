@@ -1,0 +1,20 @@
+ class Solution {
+    public List<String> fizzBuzz(int n) {
+    
+ String FIZZ = "Fizz";
+ String BUZZ = "Buzz";
+ String FIZZ_BUZZ = "FizzBuzz";
+
+ 
+    List<String> res = new ArrayList();
+    for(int i = 1; i <= n; i++){
+        //remove if else, make code shorter
+        String temp = i % 15 == 0 ? FIZZ_BUZZ : (i % 3 == 0 ? FIZZ : (i % 5 == 0 ?  BUZZ : String.valueOf(i)));
+        res.add(temp);
+    }
+    return res;
+
+        // return ans;
+  
+}
+}
